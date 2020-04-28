@@ -1,16 +1,20 @@
 # Sudoku Solver using AI 
+## Classic Sudoku
 ### Use of strategies
 1. Elimination
 2. Only choice
 3. Constraint Propagation
 4. Depth First Search
 ## Instructions to use
+1. Clone the project<br>
 `
 git clone https://github.com/prasad-kumkar/sudoku-solver.git
 `
-
+2. Run sudoku_solver.py<br>
 `
 cd sudoku-solver
+`
+`
 python sudoku_solver.py
 `
 ## Diagonal Sudoku
