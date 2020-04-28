@@ -5,10 +5,10 @@
 3. Constraint Propagation
 4. Depth First Search
 ## Instructions to use
-<br>
 `
 git clone https://github.com/prasad-kumkar/sudoku-solver.git
-`<br>
+`
+
 `
 cd sudoku-solver
 python sudoku_solver.py
