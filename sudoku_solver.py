@@ -68,6 +68,10 @@ def search(values):
         if attempt:
             return attempt
 
-
-display(search(reduce_puzzle(only_choice(eliminate(grid_values('.....................7......2.....6..............1.............5..2..............'))))))
+sudoku = '..3.2.6..9..3.5......8..4....81.29..7.......8..................8..2.3..9..5...3..'
+grid = grid_values(sudoku)
+elim  = eliminate(grid)
+oc = only_choice(elim)
+red = reduce_puzzle(oc)
+display(search(red))
 
