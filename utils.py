@@ -26,3 +26,22 @@ def display(values):
                       for c in cols))
         if r in 'CF': print(line)
     return
+
+def grid_values(grid):
+    """
+    Convert grid string into {<box>: <value>} dict with '.' value for empties.
+    Args:
+        grid: Sudoku grid in string form, 81 characters long
+    Returns:
+        Sudoku grid in dictionary form:
+        - keys: Box labels, e.g. 'A1'
+        - values: Value in corresponding box, e.g. '8', or '.' if it is empty.
+    """
+    assert len(grid) == 81, "Input grid must be a string of length 81 (9x9)"
+    l=[]
+    for i in grid:
+        if i==".":
+            l.append(cols)
+        elif i in cols:
+            l.append(i)
+    return dict(zip(boxes, l))
